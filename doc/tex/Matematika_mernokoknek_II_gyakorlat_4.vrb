@@ -1,0 +1,25 @@
+\frametitle{Fourier transzformáció}
+\begin{exampleblock}{P\'elda.}
+Hat\'arozzuk meg a $g$ f\"uggv\'eny Fourier transzform\'altj\'at, ha tudjuk, hogy az $f$
+Fourier transzform\'altja $F(\omega )=\frac{2}{\omega^2}(1-\cos(\omega))$. \'Abr\'azoljuk
+k\"oz\"os \'abr\'an az $f$ \'es $g$ f\"uggv\'enyeket, egy m\'asik \'abr\'an a Fourier transzform\'altakat.
+\[
+f(x)=\begin{cases}
+1+x,&\mbox{ha }x\in[-1,0]\\
+1-x,&\mbox{ha }x\in[0,1]\\
+0,&\mbox{egyébként.}
+\end{cases}
+\]
+\[
+g(x)=\begin{cases}
+1+\frac x2,&\mbox{ha }x\in[-2,0]\\
+1-\frac x2,&\mbox{ha }x\in[0,2]\\
+0,&\mbox{egyébként.}
+\end{cases}
+\]
+\end{exampleblock}
+{\bf Megold\'as.}
+\[
+{\cal F}[g](\omega)={\cal F}\left[ f\left(\frac x2\right)\right](\omega)
+=2{\cal F}[f](2\omega)=\frac{1}{\omega ^2}(1-\cos(2\omega)).
+\]

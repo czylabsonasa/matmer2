@@ -1,0 +1,6 @@
+#!/bin/bash
+# hogyan lehet parametert beletenni?
+for i in {1..25}
+do 
+   cp elsoDesc.tex elso${i}Desc.tex
+done

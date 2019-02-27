@@ -1,0 +1,20 @@
+%~ \Mat{
+   %~ y'+gy=hy^{a}\kh\text{alakú,}\kh a\neq 0,1\us
+   %~ \frac{1-a}{y^a}\kh\text{szorzás után}\us
+   %~ z=y^{1-a}\kh\text{-ban lineáris lesz}
+%~ }
+\Mat{
+   y'=f_{1}y+f_{a}y^{a}\kh\text{alakú,}\kh a\neq 0,1
+}
+Keressük a megoldást $u^b$ alakban:
+\Mat{
+   bu^{b-1}u'=f_{1}u^b+f_{a}u^{ab}\us
+   b-1=ab \kh \implies \kh b=\frac{1}{1-a}\us
+   bu'=f_{1}u+f_{a}\us
+   u'=(1-a)f_{1}u+(1-a)f_{a}
+}
+Összefoglalva:
+\MatTag{ber}{
+u'=(1-a)f_{1}u+(1-a)f_{a}\us
+y=u^{\frac{1}{1-a}}
+}

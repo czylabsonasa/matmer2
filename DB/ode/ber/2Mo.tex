@@ -1,0 +1,15 @@
+Az eredeti egy Bernoulli $a=2$-vel:
+\Mat{
+   u'=-\frac{4}{t}u+t^{3} u^{2}\kh
+}
+tehát \mcode{$y^{\frac{1}{1-a}}=y^{-1}=u$}-val, a következőt kell megoldani:
+\Mat{
+   y'=\frac{4}{t}y-t^3\kh\us
+   y'=\frac{4}{t}y \implies y=Kt^4 \nh \text{változó variálás:}\us
+   K't^4+K4t^3=\frac{4}{t}Kt^4-t^3\us
+   K'=-\frac{1}{t}\implies K(t)=-\log(|t|)+C\us
+   K(t)=C-\log(t)\nh t\kh\text{pozitív}\us
+   y=t^4(C-\log(t))\us
+   u=\frac{1}{t^4(C-\log(t))}
+}
+

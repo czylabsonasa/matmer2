@@ -1,0 +1,28 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.2.5)  23 APR 2018 18:14
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**matdef.tex
+(./matdef.tex
+LaTeX2e <2017/01/01> patch level 3
+Babel <3.9r> and hyphenation patterns for 30 language(s) loaded.
+./matdef.tex:2: Undefined control sequence.
+l.2 \DeclarePairedDelimiter
+                           \ceil{\lceil}{\rceil}
+? 
+./matdef.tex:2: Emergency stop.
+l.2 \DeclarePairedDelimiter
+                           \ceil{\lceil}{\rceil}
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 5 strings out of 494358
+ 130 string characters out of 6164528
+ 47653 words of memory out of 5000000
+ 3437 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 350 hyphenation exceptions out of 8191
+ 5i,0n,1p,57b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
+./matdef.tex:2:  ==> Fatal error occurred, no output PDF file produced!

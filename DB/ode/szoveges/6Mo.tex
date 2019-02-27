@@ -1,0 +1,10 @@
+Legyen a test hőmérséklete $h(t)$ a $t$-edik időpillanatban:
+\Mat{
+   h'(t)=K(h(t)-20)\kh \text{ a feltételek és hűlés-törvény miatt}\us
+   (h(t)-20)'=K(h(t)-20)\kh \text{homogén, megoldása:}\us
+   h(t)=Ce^{Kt}+20\us
+   h(0)=100 \implies C=80\us
+   h(10)=60,\kh 80e^{K10}+20=60, \kh K=\frac{\log(0.5)}{10}\us
+   h(T)=80e^{T\frac{\log(0.5)}{10}}+20=80\cdot 2^{-\frac{T}{10}}+20=25\us
+   2^{-\frac{T}{10}}=2^{-4},\kh T=40
+}

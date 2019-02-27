@@ -1,0 +1,223 @@
+%usepackage es egyebek
+\input{./alldef.tex}
+
+\hyphenation{-transz-for-mált-ját}
+
+\newcommand{\opover}[2]{%
+\kh \overset{ #1 }{ #2 } \kh
+}
+\newcounter{felszam}
+
+\newcommand{\feladat}[0]{%
+\stepcounter{felszam}
+\noindent {\bf \arabic{felszam}. Feladat }
+}
+
+\newcommand{\magy}[0]{%
+\noindent {\bf Magyarázat }
+}
+
+\newcommand{\sect}[1]{%
+\noindent {\newline \bf #1 \newline}
+}
+
+
+\begin{document}
+\sect{Emlékeztető}
+\begin{spacing}{1.3}
+\begin{gather*}
+F(\omega) = \mhint{-\infty}{\infty}{f(t)e^{-i\omega t}}{t}\\
+e^{it}=\cos(t)+i\sin(t)\\
+\mhint{a}{b}{A(t)+iB(t)}{t}=
+\mhint{a}{b}{A(t)}{t}+i\mhint{a}{b}{B(t)}{t}
+\end{gather*}
+\end{spacing}
+\sect{Jelölés}
+$FT$ = Fourier-transzformált\\
+
+
+\sect{Feladatok}
+\feladat Számoljuk ki a következő \fv{}$FT$-ját:
+\begin{equation*}
+f(t) =
+   \begin{cases*}
+      1 & $-\frac{1}{2} \le t \le \frac{1}{2}$\\
+      0        & egyébként
+   \end{cases*}
+\end{equation*}
+\sect{Megoldás}
+\begin{gather*}
+\mhint{-\infty}{\infty}{f(t) e^{-i\omega t}}{t} \opover{1.}{=}
+\mhint{-0.5}{0.5}{e^{-i\omega t}}{t} \opover{2.}{=}
+\mhint{-0.5}{0.5}{\cos(-\omega t)}{t} \opover{3.}{=}\us
+\opover{3.}{=} 2\mhint{0}{0.5}{\cos(\omega t)}{t} \opover{4.}{=}
+2\mhpfv{0}{0.5}{\frac{\sin(\omega t)}{\omega}}
+\opover{4.}{=} \frac{\sin(\frac{\omega}{2})}{\frac{\omega}{2}}
+\us
+\end{gather*}
+\magy
+\begin{enumerate}
+\item definíciók
+\item $f(t)\sin(t)$ \kh páratlan
+\item $\cos(\omega t)$ és $\vert t\vert \cos(\omega t)$ \kh páros
+\item integrálás, behelyettesítés
+\end{enumerate}
+
+\feladat Ábrázoljuk az előző feladat \fv{ét}és $FT$-ját!
+\sect{\href{negyszog.m}{Megoldás}}
+%~ \lstinputlisting[style=Matlab-editor]{negyszog.m}
+\begin{center}
+\includegraphics[scale=0.9]{negyszog}
+\end{center}
+
+
+\feladat Számoljuk ki a következő \fv{}$FT$-ját!
+\begin{equation*}
+f(t) =
+   \begin{cases*}
+      \vert t \vert & $-1 \le t \le 1$\\
+      0        & egyébként
+   \end{cases*}
+\end{equation*}
+\sect{Megoldás}
+\begin{gather*}
+\mhint{-\infty}{\infty}{f(t) e^{-i\omega t}}{t} \opover{1.}{=}
+\mhint{-1}{1}{\vert t \vert e^{-i\omega t}}{t} \opover{2.}{=}
+\mhint{-1}{1}{\vert t\vert \cos(-\omega t)}{t} \opover{3.}{=}\us
+\opover{3.}{=} 2\mhint{0}{1}{t \cos(\omega t)}{t} \opover{4.}{=}
+2\mhpfv{0}{1}{t \frac{\sin(\omega t)}{\omega}}-
+2\mhint{0}{1}{\frac{\sin(\omega t)}{\omega}}{t} \opover{4.}{=}\us
+\opover{4.}{=} 2\mhpfv{0}{1}{t \frac{\sin(\omega t)}{\omega}}+
+2\mhpfv{0}{1}{\frac{\cos(\omega t)}{\omega^2}} \opover{4.}{=}
+2\frac{\sin(\omega)}{\omega}+2\frac{\cos(\omega)}{\omega^2}-\frac{2}{\omega^2}
+\us
+\end{gather*}
+\magy
+\begin{enumerate}
+\item definíciók
+\item $\vert t\vert\sin(t)$ \kh páratlan
+\item $\cos(\omega t)$ és $\vert t\vert \cos(\omega t)$ \kh páros
+\item integrálás
+\end{enumerate}
+
+\feladat Ábrázoljuk az előző feladat \fv{ét}és $FT$-ját!
+\sect{\href{abszol.m}{Megoldás}}
+%~ \lstinputlisting[style=Matlab-editor]{abszol.m}
+\begin{center}
+\includegraphics[scale=0.9]{abszol}
+\end{center}
+
+
+\feladat Számoljuk ki a következő \fv{}$FT$-ját:
+\begin{equation*}
+f(t) =
+   \begin{cases*}
+      t & $-1 \le t \le 1$ \\
+      0        & egyébként
+   \end{cases*}
+\end{equation*}
+\sect{Megoldás}
+\begin{gather*}
+\mhint{-\infty}{\infty}{f(t) e^{-i\omega t}}{t} \opover{1.}{=}
+\mhint{-1}{1}{ t e^{-i\omega t}}{t} \opover{2.}{=}
+-i\mhint{-1}{1}{t \sin(\omega t)}{t} \opover{3.}{=}\us
+\opover{3.}{=}
+-2i\mhint{0}{1}{t \sin(\omega t)}{t} \opover{4.}{=}
+-2i\left( \mhpfv{0}{1}{t \frac{-\cos(\omega t)}{\omega}}-
+\mhint{0}{1}{\frac{-\cos(\omega t)}{\omega}}{t} \right)
+\opover{4.}{=}\us
+-2i\left( \frac{-\cos(\omega)}{\omega}+\frac{\sin(\omega)}{\omega^2} \right)
+\end{gather*}
+\magy
+\begin{enumerate}
+\item definíciók
+\item $\cos$ páros, $t\cos(\omega t)$ \kh páratlan
+\item $t\sin(\omega t)$ páros
+\item integrálás
+\end{enumerate}
+
+
+\feladat Ábrázoljuk az előző feladatbeli $FT$-at!
+
+
+
+\feladat Számoljuk ki a következő \fv{}$FT$-ját!
+\begin{equation*}
+   f(t)=e^{-\gamma \vert t \vert} \kh\kh 0<\gamma \in \mathbb{R}
+\end{equation*}
+\sect{Megoldás}
+\begin{gather*}
+\mhint{-\infty}{\infty}{f(t) e^{-i\omega t}}{t} \opover{1.}{=}
+2\mhint{0}{\infty}{e^{-\gamma t}\cos(\omega t)}{t} = 2A\us
+A \opover{2.}{=} \frac{\gamma}{\omega} \mhint{0}{\infty}{e^{-\gamma t}\sin(\omega t)}{t} =
+\frac{\gamma}{\omega} B \us
+A \opover{2.}{=} \frac{1}{\gamma} - \frac{\omega}{\gamma}B \us
+\opover{3.}{\implies} B = \frac{\omega}{\gamma^2+\omega^2} \opover{3}{\implies} 2A = \frac{2\gamma}{\gamma^2+\omega^2}
+\end{gather*}
+\magy
+\begin{enumerate}
+\item definíciók, $f(t)\sin(\omega t)$ páratlan, $\cos(\omega t)$ páros
+\item parciális integrálások
+\item egyenletrendszer megoldása, visszahelyettesítés
+\end{enumerate}
+
+\feladat Ábrázoljuk az előző feladatbeli \fv{t} és $FT$-ját különböző
+$\gamma$-kra!
+\sect{\href{expabszol.m}{Megoldás}}
+%\lstinputlisting[style=Matlab-editor]{expabszol.m}
+\begin{center}
+\includegraphics[scale=0.9]{expabszol}
+\end{center}
+
+
+\feladat Számoljuk ki a következő \fv{}$FT$-ját!
+\begin{equation*}
+   f(t)=e^{-\gamma t} \kh\kh 0<\gamma \in \mathbb{R}
+\end{equation*}
+\sect{Megoldás}
+\begin{gather*}
+\mhint{-\infty}{\infty}{f(t) e^{-i\omega t}}{t} \opover{1.}{=}
+\mhint{0}{\infty}{e^{-\gamma t}e^{-i\omega t}}{t} =
+\mhint{0}{\infty}{e^{-t(i\omega + \gamma)}}{t} = \us
+\mhpfv{0}{\infty}{ -\frac{ e^{ -t(i\omega + \gamma)}}{i\omega + \gamma} }=
+\frac{1}{i\omega + \gamma}
+\end{gather*}
+
+
+
+\newpage
+\sect{Emlékeztető}
+Az $FT$ alaptulajdonságai ($F=\mathcal{F}(f)$):
+\begin{enumerate}
+\item $\mathcal{F}$ lineáris
+\item $(\tau_{h}f)(t)=f(t+h)$: \kh $\mathcal{F}((\tau_{h}f))(\omega) = e^{i\omega h}F(\omega)$
+\kh \hfill{}(eltolás)
+\item $(\delta_{a}f)(t)=f(at)$: \kh $\mathcal{F}((\delta_{a}f))(\omega) =
+\frac{1}{\vert a\vert}F(\frac{\omega}{a})$ \kh \hfill{}(dilatáció)
+\item $g_{n}(t)=t^{n}f(t)$ \kh $\mathcal{F}(g_n)(\omega)=i^n F^{(n)}(\omega)$
+\item $\mathcal{F}(f^{(n)})(\omega)=(i\omega)^n F(\omega)$
+\item $g(t)=e^{i\Omega t}f(t)$, \kh $\mathcal{F}(g)(\omega)=F(\omega-\Omega)$\hfill{}(moduláció)
+\end{enumerate}
+
+\feladat $\mathcal{F}(f)=F$ segítségével fejezzük ki az alábbi \fv{ek} $FT$-ját!
+\begin{enumerate}
+\item $g(t)=f(2t-3)$
+\item $g(t)=\left( t^2 f(3t)\right)''$
+\end{enumerate}
+\sect{Megoldás}
+\begin{enumerate}
+\item a $2,3$ tulajdonságot használva: $\mathcal{F}(g)(\omega)=\frac{e^{-3i\omega}}{2}F(\frac{\omega}{2})$
+\item a $3,4,5$ tulajdonságot használva: $\mathcal{F}(g)(\omega)= \omega^2\left( \frac{F(\frac{\omega}{3})}{3} \right)''=\frac{\omega^2 F''(\frac{\omega}{3})}{27}$
+\end{enumerate}
+
+\feladat Számítsuk ki Matlab segítségével az 
+$f(x)=e^{-\vert x\vert}$
+Fourier transzformáltját,
+majd ábrázoljuk a függvényt és a transzformáltat egy ábrán!
+\sect{\href{mlfourier.m}{Megoldás}}
+\lstinputlisting[style=Matlab-editor]{mlfourier.m}
+
+
+
+\end{document}
+

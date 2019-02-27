@@ -1,0 +1,155 @@
+mm2 # Matematika mérnököknek 2 # T
+
+ism # Ismétlés # T
+   diff # Diff-számítás # T
+      Sum # Summa # D
+      1 # # F
+      2 # # F
+   #
+   integ # Határozatlan integrál # T
+      Sum # Summa # D
+      1 # # F
+      2 # # F
+      3 # # F
+      4 # $e^{ax}\sin(x)$ # F
+      5 # $e^{ax}\cos(x)$ # F
+   #
+#
+
+numdiff # Numerikus differenciálás # T
+   1 # $\sin(\frac{a}{x})$ # F
+   2 # $\sin(\frac{a}{x})$, szimder # F
+#
+
+ode # Diffegyenletek # T
+   tip # Osztályozás # T
+      Sum # Summa # D
+      1 # # F
+      2 # # F
+      3 # # F
+      4 # # F
+   #
+   szetval # Szétválasztható # T
+      Sum # Summa # D
+      1 # 1.feladat # F
+      2 # 2.feladat # F
+      3 # 3.feladat # F
+      4 # 4.feladat # F
+      5 # 5.feladat # F
+      6 # 6.feladat. # F
+   #
+   ehol # Elsőrendű, homogén lineáris # T
+      Sum # Summa # D
+      1 # # F
+      2 # # F
+   #
+
+   einhol # Elsőrendű, inhomogén lineáris # T
+      1 # 1. feladat # F
+      2 # 2. feladat # F
+   #
+
+   
+   szoveges # Szöveges feladatok # T
+      1 # keverés # F
+      2 # görbe # F
+      3 # levegő # F
+      4 # # F
+      5 # rádium # F
+      6 # hűlés # F
+   #
+   kef # Kezdetiérték feladatok # T
+      1 # # F
+      2 # # F
+      3 # # F
+      4 # # F
+      5 # # F
+   #
+
+   vhom # $y'=f(\frac{y}{x})$ # T
+      Sum # Summa # D
+      1 # 1.feladat # F
+      2 # 2.feladat # F
+   #
+   
+   ber # Bernoulli # T
+      Sum # Summa # D
+      1 # 1.feladat # F
+      2 # 2.feladat # F
+      3 # 3.feladat # F
+      4 # 4.feladat # F
+   #
+   maholke # $y''= a_1 y' + a_0 y$ # T
+      Sum # Képlet # D
+   #
+#
+
+
+fourier # Fourier # T
+   sor # Sorok # T
+      sum # Egyben # D
+   #
+   transz # Transzform # T
+      sum # Egyben # D
+   # 
+#
+
+matlab # Matlab # T
+   1 # diff # D
+   2 # másik diff # F
+   3 # függvények megadása # D
+#
+
+projekt # Projekt # T
+   Sum # Nappali # D
+   levSum # Levelező # D
+      elso # Első projekt # T
+         elso1 # 1 # D
+         elso2 # 2 # D
+         elso3 # 3 # D
+         elso4 # 4 # D
+         elso5 # 5 # D
+         elso6 # 6 # D
+         elso7 # 7 # D
+         elso8 # 8 # D
+         elso9 # 9 # D
+         elso10 # 10 # D
+         elso11 # 11 # D
+         elso12 # 12 # D
+      #
+      masodik # Második projekt # T
+         masodik1 # 1 # D 
+         masodik2 # 2 # D 
+         masodik3 # 3 # D 
+         masodik4 # 4 # D 
+         masodik5 # 5 # D 
+         masodik6 # 6 # D 
+         masodik7 # 7 # D 
+         masodik8 # 8 # D 
+         masodik9 # 9 # D 
+         masodik10 # 10 # D 
+         masodik11 # 11 # D 
+         masodik12 # 12 # D 
+      #
+
+      harmadik # Harmadik projekt # T
+         harmadik1 # 1 # D 
+         harmadik2 # 2 # D 
+         harmadik3 # 3 # D 
+         harmadik4 # 4 # D 
+         harmadik5 # 5 # D 
+         harmadik6 # 6 # D 
+         harmadik7 # 7 # D 
+         harmadik8 # 8 # D 
+         harmadik9 # 9 # D 
+         harmadik10 # 10 # D 
+         harmadik11 # 11 # D 
+         harmadik12 # 12 # D 
+      #
+
+
+#
+
+link # Linkek # D
+
+#

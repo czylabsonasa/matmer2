@@ -1,0 +1,14 @@
+elsőrendű, lineáris, inhomogén,\us
+(homogén mo. -> általános mo. -> konstans meghatározása)
+\Mat{
+   \dot{x}=2x\kh \text{homogén:}\us
+   x=Ce^{2t}\kh \text{variálás:}\us
+   C'e^{2t}+C2e^{2t}=2Ce^{2t}-t\us
+   C'(t)=-te^{-2t}\kh \text{parciális int:}\us
+   \mint{-te^{-2t}}{t}=\us
+   =\frac{1}{2}\mint{t(-2e^{-2t})}{t}=\frac{1}{2}te^{-2t}-
+   \frac{1}{2}\mint{e^{-2t}}{t}=\us
+   =\frac{1}{2}te^{-2t}+\frac{1}{4}e^{-2t}+K\us
+   x=\gzjel{\frac{1}{2}te^{-2t}+\frac{1}{4}e^{-2t}+K}e^{2t}\us
+   x(0)=1=\gzjel{0+0.25+K}\cdot 1 \implies K=\frac{3}{4}
+}

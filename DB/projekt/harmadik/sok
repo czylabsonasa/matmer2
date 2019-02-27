@@ -1,0 +1,6 @@
+#!/bin/bash
+# hogyan lehet parametert beletenni?
+for i in {1..12}
+do 
+   cp harmadikDesc.tex harmadik${i}Desc.tex
+done

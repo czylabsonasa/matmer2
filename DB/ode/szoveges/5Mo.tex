@@ -1,0 +1,17 @@
+Jelölje $m(t)$ a rádium atomok számát $t$ időpillanatban. Ha $\Delta t$ egy
+pozitív szám, akkor a
+\Mat{
+   \frac{m(t)-m(t+\Delta t)}{\Delta t}
+}
+mennyiség az (átlagos) bomlási sebesség a $[t,t+\Delta t]$ intervallumon.
+$\Delta t\to 0$-t véve, megkapjuk a pillanatnyi bomlási sebességet, ami a feltevés
+szerint arányos a pillanatnyi anyagmennyiséggel:
+\Mat{
+   m'=\beta m \\
+   m(t)=Ce^{\beta t} \hspace{1cm} C\in \mathbb{R} \\
+   m(0)=C\\
+   m(1000)=C e^{\beta 1000}=0.5 C\\
+   \beta=\frac{\log(0.5)}{1000}\\
+   \frac{m(100)}{m(0)}=e^{\frac{\log(0.5)}{10}} \approx 0.933
+}
+Azaz kb. $6.67$\%-a bomlik el $100$ év alatt a rádiumnak.

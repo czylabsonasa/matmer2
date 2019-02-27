@@ -1,0 +1,9 @@
+Oldja meg Runge-Kutta módszerrel az alábbi kezdetiérték problémát:
+\Mat{
+   y''-2y'+3y=2t-1\us
+   y(0)=1\us
+   y'(0)=0\us
+   y(1)=?
+}
+A lépésszám legyen 222. Hasonlítsa össze a kapott eredményt az 
+\mcode{ode45}-által számoltakkal.

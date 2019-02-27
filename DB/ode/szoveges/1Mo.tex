@@ -1,0 +1,14 @@
+Jelölje $s(t)$ a tartálybeli só mennyiségét $t$-edik időpillanatban.
+Nézzük mi történik a $[t,t+\Delta t]$ intervallumban:
+\Mat{
+   s(t+\Delta t)=s(t)+\Delta{t}\cdot2\cdot0.3-\Delta{t}\cdot2\frac{s(t)}{10}
+}
+A $\Delta t \to 0$ határátmenetet véve kapjuk:
+\Mat{
+   s'=0.6-0.2s\us
+   s(t)=Ce^{-0.2t}\kh\text{homogén}\us
+   C'(t)e^{-0.2t}-0.2C(t)e^{-0.2t}=0.6-0.2C(t)e^{-0.2t}\kh\text{variálás}\us
+   C'(t)=0.6e^{0.2t}\kh\implies\kh C(t)=3e^{0.2t}+K\us
+   s(t)=\gzjel{3e^{0.2t}+K}e^{-0.2t}=3+Ke^{-0.2t}\us
+   s(0)=0=3+K,\ K=-3\kh\implies\kh s(5)=3-\frac{3}{e}\approx 1.8964
+}

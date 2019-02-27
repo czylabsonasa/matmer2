@@ -1,0 +1,27 @@
+volt # név                    # p1 # p1res
+   5 # Bányai Kristóf         # ?  # ?
+   4 # Bélteki Gergő          # ?  # ?
+   4 # Bódizs Dénes           # ?  # ?
+   6 # Cseke Bence            # ?  # ?
+   5 # Danka Lajos            # ?  # ?
+   6 # Fekete Tamás Bence     # ?  # ?
+   6 # Horváth Alpár          # ?  # ?
+   6 # Katona Gergő           # ?  # ?
+   5 # Kékesi Roland          # ?  # ?
+   6 # Kiripolszky Ádám       # ?  # ?
+   6 # Kiss Dániel            # ?  # ?
+   5 # Kiss Gyöngyi           # ?  # ?
+   5 # Koi Krisztián          # ?  # ?
+   6 # Ködöböcz István        # ?  # ?
+   4 # Kölcsei Csanád         # ?  # ?
+   5 # Matil Ádám             # ?  # ?
+   5 # Mári Ferenc            # ?  # ?
+   4 # Nemes Kristóf          # ?  # ?
+   4 # Sápi Péter             # ?  # ?
+   5 # Somogyi Róbert         # ?  # ?
+   5 # Szathmári Gergő        # ?  # ?
+   6 # Varga Zsolt            # ?  # ?
+   4 # Vasváry Gábor          # ?  # ?
+   4 # Vén Norbert            # ?  # ?
+   5 # Vida Gergő             # ?  # ?
+   4 # Simon Gergő            # ?  # ?

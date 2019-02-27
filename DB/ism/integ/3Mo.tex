@@ -1,0 +1,9 @@
+Helyettesítés: $u=sin(x)$
+\Mat{
+   \mint{\cos^3(x)}{x}=\mint{(1-\sin^2(x))\cos(x)}{x}=\\
+   \mint{1-u^2}{u}=u-\frac{u^3}{3}+C=\sin(x)-\frac{\sin^3(x)}{3}+C
+}
+%~ >>> from sympy import *
+%~ >>> x=symbols('x')
+%~ >>> diff(sin(x)-(sin(x)**3)/3, x)
+%~ -sin(x)**2*cos(x) + cos(x)

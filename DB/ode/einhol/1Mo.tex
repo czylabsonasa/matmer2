@@ -1,0 +1,10 @@
+elsőrendű, lineáris, inhomogén
+\Mat{
+   y=Ce^{x}\kh\text{a homogén megoldása}\us
+   C=C(x)\kh\text{változó variálása}\us
+   C'(x)e^{x}+C(x)e^{x}=C(x)e^{x}+x+2\us
+   C'(x)=(x+2)e^{-x}\kh\text{parciálisan integráljuk}\us
+   C(x)=-(x+2)e^{-x}+\mint{e^{-x}}{x}=-(x+3)e^{-x}+K\us
+   y=\gzjel{-(x+3)e^{-x}+K}e^x
+}
+Ellenőrizzük géppel is a megoldást! \href{DB/M/einhol1.m}{kód}

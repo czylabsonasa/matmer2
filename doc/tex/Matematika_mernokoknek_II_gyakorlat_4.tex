@@ -1,0 +1,517 @@
+\documentclass[table]{beamer} 
+\mode<presentation>
+{
+  %\setbeamertemplate{background canvas}[vertical
+  %shading][bottom=red!10,top=blue!10]  
+
+ \usetheme{Boadilla}
+  \usefonttheme[onlysmall]{structurebold}
+}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb,latexsym,epsfig,bbm,epic,eepic,multicol,enumerate}
+\usepackage{verbatimbox,upquote,fancyvrb}
+\usepackage{epstopdf}
+\usepackage[utf8]{inputenc}
+
+\author[Baran \'Agnes, Burai P\'al, Nosz\'aly Csaba]{Baran \'Agnes, Burai P\'al, Nosz\'aly Csaba}
+\title{Matematika M\'ern\"ok\"oknek 2.}
+\date[Gyakorlat]{Gyakorlat\\Fourier transzformáció}
+
+%-----------------------------------------------------%------------------------------------------------------
+%-------------------------------------------------------
+%------------------------------------------------------
+\begin{document} 
+\begin{frame}
+\maketitle
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------ 
+
+\begin{frame}
+{Fourier transzformáció}
+
+\begin{exampleblock}{P\'elda}
+Határozzuk meg a következő függvény Fourier transzformáltját!
+\[
+f(x)=\begin{cases}
+1,&\mbox{ha }x\in\left[-\frac 12,\frac 12\right]\\
+0,&\mbox{egyébként.}
+\end{cases}
+\]
+\end{exampleblock}
+{\bf Megold\'as:} Tudjuk, hogy 
+\[
+{\cal F}[f](\omega) = \int\limits_{-\infty}^{\infty}{f(x)e^{-i\omega x}}{dx}\quad \text{\'es}\quad 
+e^{ix}=\cos(x)+i\sin(x), 
+\]
+tov\'abb\'a a $\cos$ p\'aros, a $\sin$ p\'aratlan f\"uggv\'eny, \'igy 
+\[
+e^{-ix}=\cos(x)-i\sin(x).
+\]
+
+\end{frame}
+
+%------------------------------------------------------
+%------------------------------------------------------ 
+
+
+\begin{frame}
+Ebb\H ol  
+\[
+\int\limits_{-\infty}^{\infty}{f(t)e^{-i\omega x}}{dx}=\int\limits_{-1/2}^{1/2} \cos(\omega x)dx 
+-i\underbrace{\int\limits_{-1/2}^{1/2} \sin(\omega x)dx}_{=0}
+\]
+\[
+=2\int\limits_{0}^{1/2} \cos(\omega x)dx =2\left[ \frac{\sin(\omega x)}{\omega}\right] _{x=0}^{\frac 12}
+=\frac {2}{\omega}\sin\left( \frac{\omega}{2}\right)
+\]
+\vskip .5cm 
+Teh\'at 
+\[
+{\cal F}[f](\omega)=\frac {2}{\omega}\sin\left( \frac{\omega}{2}\right)
+\]
+\end{frame}
+
+%------------------------------------------------------
+%------------------------------------------------------ 
+
+
+\begin{frame}[fragile]
+{Fourier transzformáció}
+
+\begin{exampleblock}{1. feladat}
+Határozzuk meg a következő függvények Fourier transzformáltját!
+\begin{enumerate}
+\item $f(x)=\begin{cases}
+x,&\mbox{ha }x\in[0,1]\\
+0,&\mbox{egyébként.}
+\end{cases}$
+\item $f(x)=\begin{cases}
+|x|,&\mbox{ha }x\in[-1,1]\\
+0,&\mbox{egyébként.}
+\end{cases}$
+\item $f(x)=\begin{cases}
+e^{-x},&\mbox{ha }x>0\\
+0,&\mbox{egyébként.}
+\end{cases}$
+\item $f(x)=e^{-|x|}$,
+\item $f(x)=\begin{cases}
+1+x,&\mbox{ha }x\in[-1,0]\\
+1-x,&\mbox{ha }x\in[0,1]\\
+0,&\mbox{egyébként.}
+\end{cases}$
+\end{enumerate}
+\end{exampleblock}
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------
+
+\begin{frame}[fragile]
+{Fourier transzformáció}
+\begin{exampleblock}{P\'elda.}
+Határozzuk meg a következő függvény Fourier transzformáltját!
+\[
+f(x)=\begin{cases}
+1,&\mbox{ha }x\in[2,3]\\
+0,&\mbox{egyébként.}
+\end{cases}
+\]
+\end{exampleblock}
+{\bf Megold\'as.} Sz\'amolhatunk a defin\'ici\'o alapj\'an, de haszn\'alhatjuk az al\'abbi 
+\"osszef\"ugg\'est is: 
+
+ha az $f$ Fourier-transzform\'altja $F$, akkor 
+\[
+{\cal F}[f(x-x_0)](\omega)=e^{-i\omega x_0}F(\omega). 
+\]
+Tudjuk, hogy ha 
+\[
+g(x)=\begin{cases}
+1,&\mbox{ha }x\in\left[-\frac 12,\frac 12\right]\\
+0,&\mbox{egyébként,}
+\end{cases}
+\]
+akkor 
+\[
+{\cal F}[g](\omega)=\frac {2}{\omega}\sin\left( \frac{\omega}{2}\right).
+\]
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------
+
+
+%------------------------------------------------------
+%------------------------------------------------------
+
+\begin{frame}
+Mivel $f(x)=g\left( x-\frac 52\right)$, ez\'ert 
+\begin{align*}
+{\cal F}[f](\omega)&={\cal F}\left[ g\left( x-\frac 52\right)\right](\omega) =
+e^{ -\frac 52 i\omega} \frac {2}{\omega}\sin\left( \frac{\omega}{2}\right)\\
+&=\left( \cos\frac{5\omega}{2}-i\sin\frac{5\omega}{2}\right) 
+\frac {2}{\omega}\sin\left( \frac{\omega}{2}\right).
+\end{align*}
+
+\vskip .5cm
+\begin{exampleblock}{2. feladat}
+Határozzuk meg a következő függvény Fourier transzformáltját!
+\[
+f(x)=\begin{cases}
+-1,&\mbox{ha }x\in[-1,0]\\
+1,&\mbox{ha }x\in]0,1]\\
+0,&\mbox{egyébként.}
+\end{cases}
+\]
+\end{exampleblock}
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------
+
+\begin{frame}[fragile]
+{Fourier transzformáció}
+\begin{exampleblock}{P\'elda.}
+Ha tudjuk, hogy az $f(x)=e^{-|x|}$ f\"uggv\'eny Fourier transzform\'altja 
+${\cal F}[f](\omega)=\frac{2}{1+\omega^2}$, akkor hat\'arozzuk meg a $g(x)=e^{-|2x+3|}$ 
+Fourier transzform\'altj\'at. 
+\end{exampleblock}
+{\bf Megold\'as.} Ha az $f$ Fourier-transzform\'altja $F$ \'es $a\ne 0$, akkor 
+\[
+{\cal F}[f(x-x_0)](\omega)=e^{-i\omega x_0}F(\omega) \text{ \'es }
+{\cal F}\left[ f\left(\frac xa\right)\right] (\omega)=|a|{\cal F}[f](a\omega). 
+\]
+Most $g(x)=h(2x)$, ahol $h(x)=e^{-|x+3|}=f(x+3)$, \'igy 
+\begin{align*}
+{\cal F}[g](\omega)&={\cal F}[h(2x)](\omega)=\frac 12{\cal F}[h]\left(\frac{\omega}{2}\right)
+=\frac 12{\cal F}[f(x+3)]\left(\frac{\omega}{2}\right)\\
+&=\frac 12 e^{\frac 32 i\omega}{\cal F}[f]\left(\frac{\omega}{2}\right)=\frac 12 e^{\frac 32 i\omega}
+\frac{2}{1+\left(\frac{\omega}{2}\right)^2}=e^{\frac 32 i\omega}\frac{4}{4+\omega^2}.
+\end{align*}
+\end{frame}
+
+
+%------------------------------------------------------
+%------------------------------------------------------
+\begin{frame}
+{Fourier transzformáció}
+\begin{exampleblock}{3. feladat}
+Hat\'arozza meg az al\'abbi f\"uggv\'enyek Fourier transzform\'altj\'at. 
+\begin{multicols}{2}
+\begin{enumerate}
+\item $g(x)=e^{-|1-x|}$ 
+\item $g(x)=5e^{-\left\vert \frac x3-2\right\vert }$ 
+\item $g(x)=2e^{-|3x-1|}-e^{-|x+2|}$ 
+\end{enumerate}
+\end{multicols}
+\end{exampleblock}
+
+
+
+\begin{exampleblock}{4. feladat}
+Hat\'arozza meg a $g$ f\"uggv\'eny Fourier transzform\'altj\'at, ha tudjuk, hogy az 
+\[
+f(x)=\begin{cases}
+e^{-x},&\mbox{ha }x>0\\
+0,&\mbox{egyébként.}
+\end{cases}
+\]
+f\"uggv\'eny Fourier transzform\'altja $F(\omega )=\frac{1}{1+\omega i}$.
+\[
+g(x)=\begin{cases}
+e^{4x},&\mbox{ha }x<0\\
+0,&\mbox{egyébként.}
+\end{cases}
+\]
+\end{exampleblock}
+\end{frame}
+
+%------------------------------------------------------
+%------------------------------------------------------
+
+\begin{frame}[fragile]
+{Fourier transzformáció}
+\begin{exampleblock}{P\'elda.}
+Hat\'arozzuk meg a $g$ f\"uggv\'eny Fourier transzform\'altj\'at, ha tudjuk, hogy az $f$ 
+Fourier transzform\'altja $F(\omega )=\frac{2}{\omega^2}(1-\cos(\omega))$. \'Abr\'azoljuk 
+k\"oz\"os \'abr\'an az $f$ \'es $g$ f\"uggv\'enyeket, egy m\'asik \'abr\'an a Fourier transzform\'altakat. 
+\[
+f(x)=\begin{cases}
+1+x,&\mbox{ha }x\in[-1,0]\\
+1-x,&\mbox{ha }x\in[0,1]\\
+0,&\mbox{egyébként.}
+\end{cases}
+\]
+\[
+g(x)=\begin{cases}
+1+\frac x2,&\mbox{ha }x\in[-2,0]\\
+1-\frac x2,&\mbox{ha }x\in[0,2]\\
+0,&\mbox{egyébként.}
+\end{cases}
+\]
+\end{exampleblock}
+{\bf Megold\'as.}
+\[
+{\cal F}[g](\omega)={\cal F}\left[ f\left(\frac x2\right)\right](\omega)
+=2{\cal F}[f](2\omega)=\frac{1}{\omega ^2}(1-\cos(2\omega)).
+\]
+\end{frame}
+
+
+%------------------------------------------------------
+%------------------------------------------------------
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.6]{fourier_fr_spekt.eps}
+\end{center}
+
+\vskip .5cm 
+{\color{red}Lassan v\'altoz\'o jel $\to$ keskeny frekvenciaspektrum}
+
+{\color{blue}Gyorsan v\'altoz\'o jel $\to$ sz\'eles frekvenciaspektrum}
+\end{frame}
+
+
+%------------------------------------------------------
+%------------------------------------------------------
+
+
+
+
+%------------------------------------------------------
+%------------------------------------------------------
+
+\begin{frame}[fragile]
+{Fourier transzformáció}
+\begin{exampleblock}{5. feladat}
+Legyen $a,b>0,\ x_0\in\mathbb{R}$ adott és $f$ az $x_0-\tfrac{b}{2}$ ponttól az $x_0+\tfrac{b}{2}$ 
+pontig terjedő $a$ magasságú téglalap alakú impulzus. Határozzuk meg a Fourier transzformáltját a 
+paraméterek függvényében! Hogyan változik a transzformált, ha változtatjuk a paramétereket?
+\end{exampleblock}
+\begin{exampleblock}{6. feladat}
+Tudjuk, hogy $\mathcal{F}\left[e^{-\frac{x^2}{2}}\right]=\sqrt{2\pi}e^{-\frac{\omega^2}{2}}$.
+Mi lesz a Fourier transzformáltja a következő függvényeknek?
+\begin{itemize}
+\item $f(x)=3e^{-2(x-3)^2}$,
+\item $g(x)=e^{-x^2+2x}$,
+\end{itemize}
+Minek a Fourier transzformáltja $F(\omega)=3e^{-2(\omega-3)^2}$ ?
+\end{exampleblock}
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------
+\begin{frame}[fragile]
+{Fourier transzformáció}
+\begin{exampleblock}{Példa}
+Számítsuk ki Matlab segítségével az $f(x)=e^{-|x|}$ Fourier transzformáltját, majd ábrázoljuk a függvényt és a transzformáltat.
+\end{exampleblock}
+\textbf{Megoldás:}
+A \texttt{fourier} parancs segítségével számítsuk ki a Fourier transzformáltat!
+\begin{verbatim}
+>> syms x
+>> f = exp(-abs(x));
+>> F = fourier(f)
+F =
+ 2/(w^2 + 1)
+\end{verbatim}
+
+%\vskip .5 cm 
+L\'athatjuk, hogy a kor\'abban kisz\'amolt 
+\[
+F(\omega)=\frac{2}{1+\omega ^2}
+\]
+f\"uggv\'enyt kaptuk. 
+\end{frame}
+
+%------------------------------------------------------
+%------------------------------------------------------
+\begin{frame}[fragile]
+Ábrázoljuk a függvényt és a transzformáltat!
+
+
+\begin{verbatim}
+figure;
+set(gcf,'units','points','position',[20,20,600,200])
+subplot(1,2,1)
+fplot(f,'LineWidth',2); axis([-4,4,-.5,2.5]);
+title('Az f függvény');
+ax=gca; 
+ax.XAxisLocation = 'origin';
+ax.YAxisLocation = 'origin';
+subplot(1,2,2)
+fplot(F,'LineWidth',2); axis([-4,4,-.5,2.5]);
+title('Az f Fourier transzformáltja');
+ax=gca; 
+ax.XAxisLocation = 'origin';
+ax.YAxisLocation = 'origin';
+\end{verbatim}
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------
+\begin{frame}[fragile]
+{Fourier transzformáció}
+\begin{center}
+\includegraphics[scale=0.6]{fourier_tr1.eps}
+\end{center}
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------
+\begin{frame}[fragile]
+{Fourier transzformáció}
+\begin{exampleblock}{7. feladat}
+Határozzuk meg Matlab segítségével az 1. feladatban szereplő függvények Fourier transzformáltját! 
+Ábrázoljuk a függvényt, illetve egy m\'asik \'abr\'an a transzformált valós \'es k\'epzetes r\'esz\'et!
+\end{exampleblock}
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------
+\begin{frame}[fragile]
+{Fourier transzformáció}
+\begin{exampleblock}{Példa}
+Számítsuk ki Matlab segítségével az $F(x)=e^{-x^2}$ inverz Fourier transzformáltját, majd ábrázoljuk a függvényt és a transzformáltat egy ábrán.
+\end{exampleblock}
+\textbf{Megoldás:}
+Az \texttt{ifourier} parancs segítségével számítsuk ki az inverz Fourier transzformáltat!
+\begin{verbatim}
+>> syms t x
+>> F = exp(-(x)^2);
+>> f = ifourier(F,x,t)
+\end{verbatim}
+Ábrázoljuk a függvényt és a transzformáltat közös ábrán 
+közös ábrán!
+\begin{verbatim}
+>> fplot([f F])
+>> legend('f','F');
+>> axis([-4,4,-.5,1.5])
+>> ax = gca;
+>> ax.XAxisLocation = 'origin'; ax.YAxisLocation = 'origin';
+\end{verbatim}
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------
+\begin{frame}[fragile]
+{Fourier transzformáció}
+\includegraphics[scale=0.8]{inverz_fourier_transzformalt1.eps}
+\end{frame}
+
+%------------------------------------------------------
+%------------------------------------------------------
+\begin{frame}[fragile]
+{Diszkrét Fourier transzformáció}
+\begin{block}
+{Példa}
+{Határozzuk meg az $x=[2,3, -1, 1]$ $4$-pontú jel Diszkrét Fourier transzformáltját kézzel!
+ }
+\end{block}
+\textbf{Megoldás:}
+\[
+F_k=\sum\limits_{n=0}^{N-1}f_ne^{-i\frac{2\pi}{N}kn},\qquad k=0,1,\dots,N-1,
+\] 
+azaz
+\[
+F_k=\sum\limits_{n=0}^{3}f_ne^{-i\frac{2\pi}{4}kn},\qquad k=0,1,2,3.
+\] 
+Így
+\[
+F_0= 2+3-1+1=5,\quad F_1=2+3e^{-i\frac{2\pi}{4}}-e^{-i\frac{2\pi 2}{4}}+e^{-i\frac{2\pi 3}{4}}=3-2i,
+\]
+\[
+F_2=2+3e^{-i\frac{2\pi 2}{4}}-e^{-i\frac{2\pi 4}{4}}+e^{-i\frac{2\pi 6}{4}}=-3,\quad F_4=\cdots=3+2i.
+\]
+\end{frame}
+
+%------------------------------------------------------
+%------------------------------------------------------
+\begin{frame}[fragile]
+{Diszkrét Fourier transzformáció ($DFT$)}
+
+\begin{exampleblock}{1. feladat}
+Határozzuk meg a következő vektorok $DFT$-jét! Írjuk fel a megoldást mátrixos alakban is!
+\begin{itemize}
+\item $x = [20, 5]$;
+\item $x = [3, 2, 5, 1]$.
+\end{itemize}
+\end{exampleblock}
+
+\begin{exampleblock}{2. feladat}
+\begin{itemize}
+\item Egy $9$-pontú jel $DFT$-jének páros koordinátái a következők
+$F_0=3.1,\ F_2=2.5+4.6i,\ F_4=-1.7+5.2i,\ F_6=9.3+6.3i,\ F_8=5.5-8i$. 
+Határozza meg a hiányzó koordinátákat!
+\item Pótolja a következő $DFT$ hiányzó adatait:
+$F=\left[ 1 - 0i, ?, 3 + 1i, 4 - 1i, 1 - 0i, ?, ?, 2 - 2i \right]$
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------
+\begin{frame}[fragile]
+{Inverz Diszkrét Fourier transzformáció}
+\begin{block}
+{Példa}
+{Határozzuk meg az $x=[5, 3-2i, -3, 3+2i]$ $4$-pontú jel Inverz Diszkrét Fourier transzformáltját kézzel!
+ }
+\end{block}
+\textbf{Megoldás:}
+\[
+f_k=\frac1N\sum\limits_{n=0}^{N-1}F_ne^{i\frac{2\pi}{N}kn},\qquad k=0,1,\dots,N-1,
+\] 
+azaz
+\[
+f_k=\frac14\sum\limits_{n=0}^{3}F_ne^{i\frac{2\pi}{4}kn},\qquad k=0,1,2,3.
+\] 
+Így
+{\small
+\[
+f_0=\frac{1}{4}(5+ 3-2i -3+3+2i)=2,\quad f_1=\frac{1}{4}(5+(3-2i)e^{i\frac{2\pi}{4}} -3e^{i\frac{2\pi 2}{4}}+(3+2i)e^{i\frac{2\pi 3}{4}})=3,
+\]
+\[
+f_2=\cdots=-1,\qquad f_3=\cdots=1.
+\]}
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------
+\begin{frame}[fragile]
+{Inverz  Diszkrét Fourier transzformáció}
+\begin{exampleblock}{1. feladat}
+Határozzuk meg a következő vektorok Inverz Diszkrét Fourier transzformáltját! Írjuk fel a megoldást mátrixos alakban is!
+\begin{itemize}
+\item $x = [2, 3, -1, 1]$;
+\item $x = [5, 3-2i, -3, 3+2i]$.
+\end{itemize}
+\end{exampleblock}
+\begin{exampleblock}{2. feladat}
+Kérjük le Matlabban az \texttt{fft} és az \texttt{ifft} parancsok helpjét. Ellenőrizzük a korábbi megoldásaink helyességét Matlabbal!
+\end{exampleblock}
+\end{frame}
+%------------------------------------------------------
+%------------------------------------------------------
+%------------------------------------------------------
+%------------------------------------------------------
+
+\end{document}
+
+
+
+\begin{frame}[fragile]
+{Fourier transzformáció}
+\begin{exampleblock}{Példa}
+Számítsuk ki Matlab segítségével az $f(x)=e^{-|x|}$ Fourier transzformáltját, majd ábrázoljuk a függvényt és a transzformáltat egy ábrán.
+\end{exampleblock}
+\textbf{Megoldás:}
+A \texttt{fourier} parancs segítségével számítsuk ki a Fourier transzformáltat!
+\begin{verbatim}
+>> syms t x
+>> f = exp(-abs(t));
+>> F = fourier(f,t,x)
+\end{verbatim}
+Ábrázoljuk a függvényt és a transzformáltat közös ábrán 
+közös ábrán!
+\begin{verbatim}
+>> fplot([f F])
+>> legend('f','F');
+>> axis([-4,4,-.5,2.5])
+>> ax = gca;
+>> ax.XAxisLocation = 'origin';
+>> ax.YAxisLocation = 'origin';
+\end{verbatim}
+\end{frame}

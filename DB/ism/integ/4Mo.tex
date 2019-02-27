@@ -1,0 +1,21 @@
+parciális integrálás:\us
+$f=e^{au},\kh g'=\sin(u)$:
+\Mat{
+   \mint{e^{au}\sin(u)}{u}=-e^{au}\cos(u)-\mint{ae^{au}(-\cos(u))}{u}=\us
+   =-e^{au}\cos(u)+a\mint{e^{au}\cos(u)}{u}
+}
+$f'=e^{au},\kh g=\sin(u)$:
+\Mat{
+   \mint{e^{au}\sin(u)}{u}=
+   \frac{e^{au}}{a}\sin(u)-
+   \mint{\frac{e^{au}}{a}\cos(u)}{u}=\us
+   \frac{e^{au}}{a}\sin(u)-
+   \frac{1}{a}\mint{e^{au}\cos(u)}{u}=
+}
+szorozzuk meg $a^2$-el a másodikat és adjuk össze az elsővel:
+\Mat{
+   (1+a^2)\mint{e^{au}\sin(u)}{u}=
+   ae^{au}\sin(u)-e^{au}\cos(u) \kh \implies \us
+   \mint{e^{au}\sin(u)}{u}=
+   \frac{e^{au}\gzjel{a\sin(u)-\cos(u)}}{1+a^2}
+}

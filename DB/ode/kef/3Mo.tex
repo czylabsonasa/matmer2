@@ -1,0 +1,13 @@
+elsőrendű, lineáris, inhomogén,\us
+(homogén mo. -> általános mo. -> konstans meghatározása)
+\Mat{
+   y(t)=Ce^{-t}\kh\text{ a homogén megoldása, változó variálása:}\us
+   C'(t)e^{-t}+C(t)(-1)e^{-t}=-C(t)e^{-t}+\cos(t)\us
+   C'(t)=e^{t}\cos(t)\kh\text{parciális int, kétféleképpen:}\us
+   \mint{e^{t}\cos(t)}{t}=e^{t}\sin(t)-\mint{e^{t}\sin(t)}{t}\us
+   \mint{e^{t}\cos(t)}{t}=e^{t}\cos(t)+\mint{e^{t}\sin(t)}{t}\us
+   \mint{e^{t}\cos(t)}{t}=\frac{e^{t}(\sin(t)+\cos(t))}{2}+K\us
+   y(t)=\frac{\sin(t)+\cos(t)}{2}+Ke^t\us
+   y(0)=0=\frac{0+1}{2}+K\cdot 1 \implies K=-0.5\us
+   y(t)=\frac{\sin(t)+\cos(t)-e^{t}}{2}
+}
