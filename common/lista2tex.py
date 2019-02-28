@@ -2,7 +2,7 @@ import sys
 
 thepre=r"""
 %usepackage es egyebek
-\input{../common/alldef.tex}
+\input{common/alldef.tex}
 
 \begin{document}\begin{spacing}{1.4}
 \pagecolor{BGSZ}
