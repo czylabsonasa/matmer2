@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.29)  28 FEB 2019 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.19)  5 MAR 2019 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1514,27 +1514,27 @@ Desc.tex [4]) [5]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 4.
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 4.
-LaTeX Font Info:    No file T1fvm.fd. on input line 4.
 
-
-LaTeX Font Warning: Font shape `T1/fvm/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 4.
-
-(./DB/M/numdiff.m
+(/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 14.6881pt on input line 4.
+ (./DB/M/numdiff.m
 LaTeX Font Info:    Try loading font information for TS1+fvm on input line 8.
-LaTeX Font Info:    No file TS1fvm.fd. on input line 8.
 
-
-LaTeX Font Warning: Font shape `TS1/fvm/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textquotesingle' on input line 8.
-
-)) [24] (./DB/numdiff/2Fa.tex) [25] (./DB/numdiff/2Mo.tex (./DB/M/numdiffSym.m)
-) [26] [27] [28] (./DB/ode/tip/SumDesc.tex
+(/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fvm.fd
+File: ts1fvm.fd 2004/09/07 scalable font definitions for TS1/fvm.
+)
+LaTeX Font Info:    Font shape `TS1/fvm/m/n' will be
+(Font)              scaled to size 14.6881pt on input line 8.
+)) [24]
+(./DB/numdiff/2Fa.tex) [25] (./DB/numdiff/2Mo.tex (./DB/M/numdiffSym.m))
+[26] [27] [28] (./DB/ode/tip/SumDesc.tex
 Underfull \hbox (badness 1527) in paragraph at lines 11--13
-[]\T1/fvm/m/n/17.28 alakú (vagy ilyenre hozható), ahol $\OML/cmm/m/it/17.28 P[]
-\OT1/cmr/m/n/17.28 (\OML/cmm/m/it/17.28 x\OT1/cmr/m/n/17.28 )$ \T1/fvm/m/n/17.2
-8 csak $\OML/cmm/m/it/17.28 x$\T1/fvm/m/n/17.28 -t®l függ.
+[]\T1/cmr/m/n/17.28 alakú (vagy ilyenre hozható), ahol $\OML/cmm/m/it/17.28 P[]
+\OT1/cmr/m/n/17.28 (\OML/cmm/m/it/17.28 x\OT1/cmr/m/n/17.28 )$ \T1/cmr/m/n/17.2
+8 csak $\OML/cmm/m/it/17.28 x$\T1/cmr/m/n/17.28 -t®l függ.
  []
 
 [29]) [30] (./DB/ode/tip/1Fa.tex) [31] (./DB/ode/tip/1Mo.tex) [32]
@@ -1584,70 +1584,70 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 (./DB/M/fundef.m)) [115] [116] (./DB/projekt/SumDesc.tex) [117]
 (./DB/projekt/levSumDesc.tex) [118] [119] (./DB/projekt/elso/elso1Desc.tex
 Underfull \hbox (badness 4505) in paragraph at lines 5--11
-[]\T1/fvm/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
+[]\T1/cmr/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
  []
 
 ) [120] (./DB/projekt/elso/elso2Desc.tex
 Underfull \hbox (badness 4505) in paragraph at lines 5--11
-[]\T1/fvm/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
+[]\T1/cmr/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
  []
 
 ) [121] (./DB/projekt/elso/elso3Desc.tex
 Underfull \hbox (badness 4505) in paragraph at lines 5--11
-[]\T1/fvm/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
+[]\T1/cmr/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
  []
 
 ) [122] (./DB/projekt/elso/elso4Desc.tex
 Underfull \hbox (badness 4505) in paragraph at lines 5--12
-[]\T1/fvm/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
+[]\T1/cmr/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
  []
 
 ) [123] (./DB/projekt/elso/elso5Desc.tex
 Underfull \hbox (badness 4505) in paragraph at lines 5--12
-[]\T1/fvm/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
+[]\T1/cmr/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
  []
 
 ) [124] (./DB/projekt/elso/elso6Desc.tex
 Underfull \hbox (badness 3525) in paragraph at lines 5--11
-\T1/fvm/m/n/17.28 let vek-tormeze-jét a $\OT1/cmr/m/n/17.28 [\OMS/cmsy/m/n/17.2
+\T1/cmr/m/n/17.28 let vek-tormeze-jét a $\OT1/cmr/m/n/17.28 [\OMS/cmsy/m/n/17.2
 8 ^^@\OT1/cmr/m/n/17.28 1\OML/cmm/m/it/17.28 ; \OT1/cmr/m/n/17.28 2] \OMS/cmsy/
 m/n/17.28 ^^B \OT1/cmr/m/n/17.28 [\OMS/cmsy/m/n/17.28 ^^@\OT1/cmr/m/n/17.28 13\
-OML/cmm/m/it/17.28 ; \OT1/cmr/m/n/17.28 3]$\T1/fvm/m/n/17.28 -en és ra-j-zoltas
+OML/cmm/m/it/17.28 ; \OT1/cmr/m/n/17.28 3]$\T1/cmr/m/n/17.28 -en és ra-j-zoltas
 sa rá az
  []
 
 ) [125] (./DB/projekt/elso/elso7Desc.tex
 Underfull \hbox (badness 3525) in paragraph at lines 5--11
-\T1/fvm/m/n/17.28 let vek-tormeze-jét a $\OT1/cmr/m/n/17.28 [\OMS/cmsy/m/n/17.2
+\T1/cmr/m/n/17.28 let vek-tormeze-jét a $\OT1/cmr/m/n/17.28 [\OMS/cmsy/m/n/17.2
 8 ^^@\OT1/cmr/m/n/17.28 1\OML/cmm/m/it/17.28 ; \OT1/cmr/m/n/17.28 2] \OMS/cmsy/
 m/n/17.28 ^^B \OT1/cmr/m/n/17.28 [\OMS/cmsy/m/n/17.28 ^^@\OT1/cmr/m/n/17.28 13\
-OML/cmm/m/it/17.28 ; \OT1/cmr/m/n/17.28 3]$\T1/fvm/m/n/17.28 -en és ra-j-zoltas
+OML/cmm/m/it/17.28 ; \OT1/cmr/m/n/17.28 3]$\T1/cmr/m/n/17.28 -en és ra-j-zoltas
 sa rá az
  []
 
 ) [126] (./DB/projekt/elso/elso8Desc.tex
 Underfull \hbox (badness 1527) in paragraph at lines 6--12
-\T1/fvm/m/n/17.28 let vek-tormeze-jét a $\OT1/cmr/m/n/17.28 [\OMS/cmsy/m/n/17.2
+\T1/cmr/m/n/17.28 let vek-tormeze-jét a $\OT1/cmr/m/n/17.28 [\OMS/cmsy/m/n/17.2
 8 ^^@\OT1/cmr/m/n/17.28 2\OML/cmm/m/it/17.28 ; \OMS/cmsy/m/n/17.28 ^^@\OT1/cmr/
 m/n/17.28 0\OML/cmm/m/it/17.28 :\OT1/cmr/m/n/17.28 3] \OMS/cmsy/m/n/17.28 ^^B \
 OT1/cmr/m/n/17.28 [\OMS/cmsy/m/n/17.28 ^^@\OT1/cmr/m/n/17.28 8\OML/cmm/m/it/17.
-28 ; \OT1/cmr/m/n/17.28 0]$\T1/fvm/m/n/17.28 -en és ra-j-zoltassa rá az
+28 ; \OT1/cmr/m/n/17.28 0]$\T1/cmr/m/n/17.28 -en és ra-j-zoltassa rá az
  []
 
 ) [127] (./DB/projekt/elso/elso9Desc.tex) [128]
 (./DB/projekt/elso/elso10Desc.tex
 Underfull \hbox (badness 4505) in paragraph at lines 5--11
-[]\T1/fvm/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
+[]\T1/cmr/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
  []
 
 ) [129] (./DB/projekt/elso/elso11Desc.tex
 Underfull \hbox (badness 4505) in paragraph at lines 5--11
-[]\T1/fvm/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
+[]\T1/cmr/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
  []
 
 ) [130] (./DB/projekt/elso/elso12Desc.tex
 Underfull \hbox (badness 4505) in paragraph at lines 5--11
-[]\T1/fvm/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
+[]\T1/cmr/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
  []
 
 ) [131] [132] (./DB/projekt/masodik/masodik1Desc.tex) [133]
@@ -1689,39 +1689,38 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1628.
  ) 
 Here is how much of TeX's memory you used:
- 37325 strings out of 494923
- 716971 string characters out of 6180741
- 788860 words of memory out of 5000000
- 39474 multiletter control sequences out of 15000+600000
- 542821 words of font info for 57 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 37361 strings out of 494342
+ 717637 string characters out of 6168654
+ 790478 words of memory out of 5000000
+ 39661 multiletter control sequences out of 15000+600000
+ 543734 words of font info for 60 fonts, out of 8000000 for 9000
+ 309 hyphenation exceptions out of 8191
  68i,20n,101p,10533b,2099s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/nosy/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1728.600p
 k> </home/nosy/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600p
 k> </home/nosy/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1728.600p
 k> </home/nosy/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1728.600p
-k> </home/nosy/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
-k> </home/nosy/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600p
-k> </home/nosy/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600p
-k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (158 pages, 572984 bytes).
+k>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/nosy/.texl
+ive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/nosy/.texl
+ive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/nosy/.texl
+ive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b>
+Output written on main.pdf (158 pages, 578059 bytes).
 PDF statistics:
- 1620 PDF objects out of 1728 (max. 8388607)
+ 1617 PDF objects out of 1728 (max. 8388607)
  361 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
