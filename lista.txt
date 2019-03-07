@@ -101,6 +101,7 @@ matlab # Matlab # T
 #
 
 projekt # Projekt # T
+   hatar # Határidők # D
    Sum # Nappali # D
    levSum # Levelező # D
       elso # Első projekt # T
