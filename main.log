@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.30)  7 MAR 2019 19:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.30)  10 MAR 2019 08:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1627,12 +1627,8 @@ sa rá az
  []
 
 ) [127] (./DB/projekt/elso/elso8Desc.tex
-Underfull \hbox (badness 1527) in paragraph at lines 6--12
-\T1/cmr/m/n/17.28 let vek-tormeze-jét a $\OT1/cmr/m/n/17.28 [\OMS/cmsy/m/n/17.2
-8 ^^@\OT1/cmr/m/n/17.28 2\OML/cmm/m/it/17.28 ; \OMS/cmsy/m/n/17.28 ^^@\OT1/cmr/
-m/n/17.28 0\OML/cmm/m/it/17.28 :\OT1/cmr/m/n/17.28 3] \OMS/cmsy/m/n/17.28 ^^B \
-OT1/cmr/m/n/17.28 [\OMS/cmsy/m/n/17.28 ^^@\OT1/cmr/m/n/17.28 8\OML/cmm/m/it/17.
-28 ; \OT1/cmr/m/n/17.28 0]$\T1/cmr/m/n/17.28 -en és ra-j-zoltassa rá az
+Underfull \hbox (badness 4505) in paragraph at lines 5--11
+[]\T1/cmr/m/n/17.28 differenciálegyenlet  megoldását kézzel. Oldja meg a Mat-
  []
 
 ) [128] (./DB/projekt/elso/elso9Desc.tex) [129]
@@ -1719,7 +1715,7 @@ amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
 b>
-Output written on main.pdf (159 pages, 588119 bytes).
+Output written on main.pdf (159 pages, 588035 bytes).
 PDF statistics:
  1644 PDF objects out of 1728 (max. 8388607)
  363 named destinations out of 1000 (max. 500000)
