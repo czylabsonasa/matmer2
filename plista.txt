@@ -1,10 +1,20 @@
-mm2 # Matematika mérnököknek I # T
-ode # Diffegyenletek # T
-   kef # kef # T
-      1 # # F
-      2 # # F
-      3 # # F
-      4 # # F
-   #
+mm2 # Matematika mérnököknek 2 # T
+
+projekt # Projektek # T
+      elso # Első projekt # T
+         elso1 # 1 # D
+         elso2 # 2 # D
+         elso3 # 3 # D
+         elso4 # 4 # D
+         elso5 # 5 # D
+         elso6 # 6 # D
+         elso7 # 7 # D
+         elso8 # 8 # D
+         elso9 # 9 # D
+         elso10 # 10 # D
+         elso11 # 11 # D
+         elso12 # 12 # D
+      #
+
 #
 #

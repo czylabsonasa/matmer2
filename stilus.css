@@ -1,0 +1,82 @@
+/*<style type="text/css">*/
+body {
+  font-size: large;
+  background-color: rgb(111, 182, 182);
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 14px 14px 14px 14px;
+  font-family: sans-serif;
+}
+
+
+/* ----------------------------------- */
+/* general table */
+table {
+width: 70%;
+}
+
+/* tr:nth-child(even) {
+background-color: Gray;
+} */
+
+td:hover{
+content:attr(title);
+color: whitesmoke;
+}
+
+
+table#col4 th {
+height: 2em;
+width: 25%
+}
+
+table#col4 td {
+height: 2em;
+width: 25%
+}
+
+
+a#mas {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 15em ;
+  margin-right: 0.125%;
+  text-align: center;
+  line-height: 3;
+  color: rgb(12, 12, 12);
+}
+#mas {
+  background: rgb(137, 138, 196);
+}
+
+
+a {
+outline: none;
+text-decoration: none;
+display: inline-block;
+width: 15em ;
+margin-right: 0.125%;
+text-align: center;
+line-height: 3;
+color: black;
+}
+
+a:link, a:visited, a:focus {
+background: LightGray;
+}
+
+a:hover {
+background: DarkGray;
+}
+
+a:active {
+background: rgb(52, 168, 87);
+color: white;
+}
+
+
+div{
+  background:  rgb(88, 145, 145);
+  width: 60em ;
+}
